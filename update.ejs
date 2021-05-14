@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Fashion Footwear</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devive-width">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+       <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    </head>
+
+
+
+
+
+    <body class="hold-transition sidebar-mini" style="overflow: hidden;">
+        <div class="wrapper">
+            <!-- Navigation Bar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"> 
+                    <i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /. end of navbar -->
+
+
+            
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                  <img src="/images/foot.jpg" alt="Fashion"  class="brand-image img-circle elevation-3">  
+                  <span class="brand-text font-weight-light">Fashion Footwear</span>
+                </a>
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                      <!--<div class="image">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                      </div>-->
+                      <div class="info">
+                        <a href="/" class="d-block">Sindhuja Ravikanth</a>
+                      </div>
+                    </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <li class="nav-item">
+                      <a href="/create" class="nav-link">
+                      <i class="nav-icon far fa-circle text-success"></i>
+                      <p class="text">Add Product</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/updatestock" class="nav-link">
+                      <i class="nav-icon far fa-circle text-info"></i>
+                      <p class="text">Update Stock</p>
+                     </a>
+                   </li>
+                   <li class="nav-item">
+                    <a href="/deleteproduct" class="nav-link">
+                    <i class="nav-icon far fa-circle text-danger"></i>
+                    <p class="text">Delete Product</p>
+                    </a>
+                  </li>
+              
+                  </ul>
+                </nav>
+                </div>  
+            </aside>
+
+            <div class="content-wrapper">
+			
+                <section class="content-header">
+                    <h1>Fashion Footwear</h1>
+                </section>
+                
+                <section class="content">
+                    <div class="card">
+                       <div class="card-header">
+                
+                           <div class="card-body table-responsive p-0" style="height: 500px;">
+    
+                               <div class="card card-primary">
+                                   <div class="card-header">
+                                       <h3 class="card-title">Update Stock</h3>
+                                    </div>
+                                <form action="/update" method="POST">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Product ID: </label>
+                                            <input type="number" placeholder="Enter Item ID" class="form-control" name="pid"><br>
+                                        <div>
+                                            <div class="form-group">
+                                                <label>New Stock: </label>&nbsp;
+                                                <input type="number" placeholder="Enter quantity" class="form-control"  name="stock"><br>
+                                            </div>
+                                        <div class="card-footer">
+                                                <button type="submit" class="btn btn-success float-left">Submit</button>
+                                        </div>
+                                   
+                                        <div class="col-4" style="right: -230px; bottom: 50.8px;">
+                                              <a href="/">
+                                              <input type="button" value="Cancel" class="btn btn-success float-right">
+                                             </a>
+                                        </div>
+                                        </div>
+                                       </form>
+                                      </div>
+                                   </div>
+                                   <!--<div class="card-tools">
+                                           <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                           <i class="fas fa-minus"></i></button>
+                                           <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                                          <i class="fas fa-times"></i></button>
+                                   </div>-->
+                              </div>
+                           </div>
+                    </section>
+                </div>
+                               
+            </div>
+                               
+           </body>
+</html>
